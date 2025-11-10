@@ -1,0 +1,35 @@
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.placeholderIcon {
+  width: 48px;
+  height: 48px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.placeholderText {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  text-align: center;
+  word-break: break-all;
+  max-width: 200px;
+}

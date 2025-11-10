@@ -1,0 +1,221 @@
+.projectDetailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: var(--spacing-sm);
+}
+
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: var(--accent-blue);
+}
+
+/* Project header */
+.projectHeader {
+  position: relative;
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.featuredBadge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--accent-green);
+  color: var(--bg-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.projectHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-green);
+}
+
+.projectSummary {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Sections */
+.section {
+  padding: var(--spacing-lg) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--accent-purple);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Tech stack */
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.techTag {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+/* Images grid */
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.imageWrapper {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+/* Code examples */
+.codeExamples {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.codeExample {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.codeTitle {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-orange);
+}
+
+.codeBlock {
+  padding: var(--spacing-lg);
+  overflow-x: auto;
+}
+
+.codeBlock pre {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.codeBlock code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Project links */
+.projectLinks {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--accent-blue);
+  color: var(--bg-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent-blue);
+  transition: all 0.2s;
+}
+
+.projectLink:hover {
+  background: var(--accent-blue-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.projectLink.secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.projectLink.secondary:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projectHeader h1 {
+    font-size: 2rem;
+  }
+
+  .projectSummary {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .imagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectLinks {
+    flex-direction: column;
+  }
+
+  .projectLink {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .codeBlock pre {
+    font-size: 0.85rem;
+  }
+}

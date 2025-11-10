@@ -1,0 +1,60 @@
+.bioSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  align-items: center;
+}
+
+.bioContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--accent-green);
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--accent-orange);
+  margin-bottom: var(--spacing-sm);
+}
+
+.location,
+.email {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.email a {
+  color: var(--accent-blue);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.bioImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .bioSection {
+    grid-template-columns: 1fr;
+  }
+
+  .bioImage {
+    order: -1;
+    max-width: 200px;
+  }
+
+  .bioContent h1 {
+    font-size: 2rem;
+  }
+}
