@@ -24,11 +24,11 @@
     "categories": [
       {
         "name": "Languages",
-        "items": ["TypeScript", "Python", "Swift", "C++", "Java", "C", "SQL", "HTML/CSS"]
+        "items": ["TypeScript", "Python", "Swift", "C++", "Java", "SQL", "HTML/CSS"]
       },
       {
         "name": "Frontend",
-        "items": ["React", "Next.js", "SwiftUI", "jQuery", "AJAX", "Bootstrap"]
+        "items": ["React", "Next.js", "SwiftUI"]
       },
       {
         "name": "Backend",
@@ -40,7 +40,7 @@
       },
       {
         "name": "Tools & Technologies",
-        "items": ["Git", "Socket.io", "Kafka", "MapReduce", "AWS", "Xcode Instruments", "Docker"]
+        "items": ["Git", "Socket.io", "Kafka", "AWS", "Xcode Instruments", "Docker"]
       }
     ]
   },
